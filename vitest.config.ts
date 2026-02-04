@@ -10,6 +10,7 @@ export default defineConfig({
   test: {
     globals: true,
     include: ['**/**/*.{test,spec}.{ts,tsx}'],
+    exclude: ['**/e2e/**'],
     setupFiles: ['./src/testing/vitest.setup.ts'],
     browser: {
       enabled: true,
