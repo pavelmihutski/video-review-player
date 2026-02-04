@@ -1,0 +1,3 @@
+export * from './createComment';
+export * from './getComments';
+export * from './updateComment';

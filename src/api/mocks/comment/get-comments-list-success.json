@@ -1,0 +1,34 @@
+[
+  {
+    "id": "c_1",
+    "time": 12.5,
+    "author": "Alice",
+    "timestamp": 1769971103216,
+    "text": "Colour in background looks warm",
+    "resolved": false
+  },
+  {
+    "id": "c_2",
+    "time": 22.01,
+    "author": "Bob",
+    "timestamp": 1769971103216,
+    "text": "Great transition here!",
+    "resolved": true
+  },
+  {
+    "id": "c_3",
+    "time": 32.0,
+    "author": "Charlie",
+    "timestamp": 1769971103216,
+    "text": "Audio levels seem off",
+    "resolved": false
+  },
+  {
+    "id": "c_4",
+    "time": 35.75,
+    "timestamp": 1769971103216,
+    "author": "Diana",
+    "text": "Love this scene composition",
+    "resolved": true
+  }
+]
