@@ -9,7 +9,8 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    include: ['**/**/*.{test,spec}.{ts,tsx}'],
+    include: ['src/**/*.{test,spec}.{ts,tsx}'],
+    exclude: ['**/node_modules/**', '**/e2e/**', '**/dist/**'],
     setupFiles: ['./src/testing/vitest.setup.ts'],
     browser: {
       enabled: true,

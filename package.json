@@ -13,6 +13,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ./dist"
   },
@@ -31,6 +33,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
+    "@playwright/test": "^1.58.1",
     "@redux-devtools/extension": "^3.3.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -52,7 +55,7 @@
     "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "msw": "^2.7.3",
-    "playwright": "^1.51.1",
+    "playwright": "^1.58.1",
     "prettier": "^3.5.3",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
