@@ -53,9 +53,19 @@ npm run preview      # Preview production build
 
 ### Testing
 
+#### Unit & Integration Tests
+
 ```bash
-npm run test              # Run tests
+npm run test              # Run unit tests with Vitest
 npm run test:coverage     # Run tests with coverage
+npm run test:ui           # Open Vitest UI
+```
+
+#### E2E Tests
+
+```bash
+npm run test:e2e          # Run E2E tests (headless)
+npm run test:e2e:ui       # Run E2E tests with Playwright UI
 ```
 
 ### Deploy
@@ -75,16 +85,21 @@ src/
 ├── data/             # Data layer (comments, player state)
 ├── components/       # Shared components
 └── hooks/            # Shared hooks
+e2e/                  # End to end tests
+
 ```
 
 ## Scripts
 
-| Command                | Description              |
-| ---------------------- | ------------------------ |
-| `npm run dev`          | Start development server |
-| `npm run build`        | Build for production     |
-| `npm run test`         | Run tests                |
-| `npm run lint`         | Check linting            |
-| `npm run lint:fix`     | Fix linting errors       |
-| `npm run prettier:fix` | Format code              |
-| `npm run deploy`       | Deploy to GitHub Pages   |
+| Command                 | Description                      |
+| ----------------------- | -------------------------------- |
+| `npm run dev`           | Start development server         |
+| `npm run build`         | Build for production             |
+| `npm run test`          | Run unit tests                   |
+| `npm run test:coverage` | Run tests with coverage          |
+| `npm run test:e2e`      | Run E2E tests (headless)         |
+| `npm run test:e2e:ui`   | Run E2E tests with Playwright UI |
+| `npm run lint`          | Check linting                    |
+| `npm run lint:fix`      | Fix linting errors               |
+| `npm run prettier:fix`  | Format code                      |
+| `npm run deploy`        | Deploy to GitHub Pages           |
